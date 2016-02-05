@@ -1,3 +1,9 @@
-<p><%= @joined_on %></p>
-<%= render 'daily_entries/form' %>
-<%= render 'daily_entries/daily_entry' %>
+<div id="sidebar">
+	<div id="sidebar_content">
+		<p><%= @joined_on %></p>
+	</div>
+</div>
+<div class="all_entries">
+	<%= render 'daily_entries/form' %>
+		<%= render 'daily_entries/daily_entry' %>
+</div>

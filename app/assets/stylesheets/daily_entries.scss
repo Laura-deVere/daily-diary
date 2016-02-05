@@ -1,38 +1,42 @@
 // Place all the styles related to the daily_entries controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
 $darkestorange : #e47a0a;
 $lightblue : #87e0fd;
-
-body {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(90deg, $lightblue 50%, $darkestorange 50%);
-	background-size: 100%;
-
-	-webkit-animation: AnimationName 59s ease infinite;
-	-moz-animation: AnimationName 59s ease infinite;
-	animation: AnimationName 59s ease infinite;
-
-	@-webkit-keyframes AnimationName {
-	    0%{background-position:83% 0%}
-	    50%{background-position:18% 100%}
-	    100%{background-position:83% 0%}
+$white : #fff;
+$largest-font: 85px;
+$mid-font: 18px;
+$nav-bar-font: 'Open Sans Condensed', sans-serif;
+$light-gray: #eeeeee;
+div.all_entries {
+	width: 70%;
+	padding-left: 10%;
+	background-color: $light-gray;
+	// float: right;
+	
+	div.single_entry {
+		width: 30%;
+		box-sizing: border-box;
+		float: left;
+		margin-right: 1em;
+		margin-bottom: 1em;
+		border: 3px solid #c1c1c3;
+		font-family: $nav-bar-font;
+		background-color: $light-gray;		
 	}
-	@-moz-keyframes AnimationName {
-	    0%{background-position:83% 0%}
-	    50%{background-position:18% 100%}
-	    100%{background-position:83% 0%}
-	}
-	@keyframes AnimationName { 
-	    0%{background-position:83% 0%}
-	    50%{background-position:18% 100%}
-	    100%{background-position:83% 0%}
-	}
-	h3 {
-		color: #fff;
+	div.date-container {
+		background-color: $darkestorange;
+		margin: 0;
+		padding-bottom: 2em;
+		p {
+			margin: 0;
+			padding: 1em;
+			color: $white;
+		}
+		div.daily-entry-body {
+			padding: 3em;
+
+		}
 	}
 }
+

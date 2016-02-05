@@ -8,7 +8,7 @@ $nav-bar-font: 'Open Sans Condensed', sans-serif;
 
 html {
 	margin: 0;
-	padding: 0;
+	padding: 0 0 0 200px;
 }
 
 body {
@@ -77,6 +77,19 @@ nav {
 	}
 }
 
+div#sidebar{
+   position: fixed;
+   height: 100%;
+   width: 200px; 
+   top: 0;
+   left: 0;
+   background: $darkestorange; 
+}
+div#content{
+    background: black;
+    width: 100%;
+    height: 1600px;
+}
 
 
 

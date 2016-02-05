@@ -1,4 +1,12 @@
 <% @daily_entries.each do |daily_entry| %>
-<h3><%= daily_entry.title %></h3>
-<p><%= daily_entry.body %></p>
+	<div class="single_entry">
+		<div class="date-container">
+			<p><%= daily_entry.format_date %></p>
+		</div>
+		<div class="daily-entry-body">
+			<h3><%= daily_entry.title %></h3>
+			<p><%= daily_entry.body[0,100] %></p>
+		</div>
+	</div>
 <% end %>
+	
