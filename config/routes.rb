@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-
+  resources :daily_entries
   get '/users/show', to: 'users#show'
   root 'users#index'
   # The priority is based upon order of creation: first created -> highest priority.

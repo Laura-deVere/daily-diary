@@ -10,6 +10,7 @@ class UsersController < ApplicationController
 
 	def show
 		@user = current_user
+		@daily_entries = @user.daily_entries.all
 		@joined_on = @user.created_at.to_formatted_s(:short)
 	end
 

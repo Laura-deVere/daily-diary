@@ -1,0 +1,29 @@
+<div class="new_daily_entry">
+	<%= form_for DailyEntry.new do |f| %>
+		<p>
+			<%= f.label :title %>
+			<%= f.text_field :title, required: true %>
+		</p>
+		<p>
+			<%= f.label :body %>
+			<%= f.text_area :body, required: true %>
+		</p>
+		<p>
+			<%= f.label :mood_rating %>
+			<%= radio_button(:daily_entry, :mood_rating, 1, options = {}) %>
+			<%= radio_button(:daily_entry, :mood_rating, 2, options = {} ) %>
+			<%= radio_button(:daily_entry, :mood_rating, 3) %>
+			<%= radio_button(:daily_entry, :mood_rating, 4) %>
+			<%= radio_button(:daily_entry, :mood_rating, 5) %>
+			<%= radio_button(:daily_entry, :mood_rating, 6) %>
+			<%= radio_button(:daily_entry, :mood_rating, 7) %>
+			<%= radio_button(:daily_entry, :mood_rating, 8) %>
+			<%= radio_button(:daily_entry, :mood_rating, 9) %>
+			<%= radio_button(:daily_entry, :mood_rating, 10) %>
+			collection_radio_buttons
+		</p>
+		<p>
+			<%= f.submit %>
+		</p>	
+	<% end %>
+</div>
