@@ -10,17 +10,18 @@
 		</p>
 		<p>
 			<%= f.label :mood_rating %>
-			<%= radio_button(:daily_entry, :mood_rating, 1, options = {}) %>
-			<%= radio_button(:daily_entry, :mood_rating, 2, options = {} ) %>
-			<%= radio_button(:daily_entry, :mood_rating, 3) %>
-			<%= radio_button(:daily_entry, :mood_rating, 4) %>
-			<%= radio_button(:daily_entry, :mood_rating, 5) %>
-			<%= radio_button(:daily_entry, :mood_rating, 6) %>
-			<%= radio_button(:daily_entry, :mood_rating, 7) %>
-			<%= radio_button(:daily_entry, :mood_rating, 8) %>
-			<%= radio_button(:daily_entry, :mood_rating, 9) %>
-			<%= radio_button(:daily_entry, :mood_rating, 10) %>
-			collection_radio_buttons
+			<ul>
+				<li>Sad <%= radio_button(:daily_entry, :mood_rating, 1, options = {}) %></li>
+				<li><%= radio_button(:daily_entry, :mood_rating, 2, options = {} ) %></li>
+				<li><%= radio_button(:daily_entry, :mood_rating, 3) %></li>
+				<li><%= radio_button(:daily_entry, :mood_rating, 4) %></li>
+				<li>Somewhere in between? <%= radio_button(:daily_entry, :mood_rating, 5) %></li>
+				<li><%= radio_button(:daily_entry, :mood_rating, 6) %></li>
+				<li><%= radio_button(:daily_entry, :mood_rating, 7) %></li>
+				<li><%= radio_button(:daily_entry, :mood_rating, 8) %></li>
+				<li><%= radio_button(:daily_entry, :mood_rating, 9) %></li>
+				<li>Happy <%= radio_button(:daily_entry, :mood_rating, 10) %></li>
+			<ul>
 		</p>
 		<p>
 			<%= f.submit %>

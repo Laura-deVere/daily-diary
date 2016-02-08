@@ -1,5 +1,6 @@
 
-$darkestorange : #e47a0a;
+$darkestorange : #f25252;
+// #e47a0a;
 $lightblue : #87e0fd;
 $white : #fff;
 $largest-font: 85px;
@@ -11,7 +12,7 @@ html {
 	padding: 0 0 0 200px;
 }
 
-body {
+body.homepage {
 	margin: 0;
 	padding: 0;
 	width: 100%;
